@@ -33,7 +33,7 @@ p workers.map(&:status)
     sleep 1
   }
 end
-## 答应worker的状态
+## 打印worker的状态
 p workers.map(&:status)
 
 sleep 1 until queue.empty?
