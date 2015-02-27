@@ -10,7 +10,7 @@ arry.each do |a|
     if (num % 2) == 0
         odd += 1
     elsif
-        qdd +=1
+        qdd += 1
     end
 end 
 
