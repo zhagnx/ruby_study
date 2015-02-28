@@ -9,6 +9,7 @@ freinds = ARGV[0].to_i
 money =  ARGV[1].to_i
 MIN = 0.01
 puts "本次红包总额为#{money}元,共发放给#{freinds}个朋友\n"
+
 (1..freinds-1).each do |i|
   safe_money = (money - (freinds - i) * MIN) / (freinds -i)
   per_money =  (rand(1..(safe_money*100).to_i)/100.0).round(3)
@@ -17,7 +18,4 @@ puts "本次红包总额为#{money}元,共发放给#{freinds}个朋友\n"
 end
 
 puts "第#{freinds}个红包抢得:#{money}元,余额:0.00元"
-
-
-
 
